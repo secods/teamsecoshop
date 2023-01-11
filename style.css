@@ -6,7 +6,7 @@
 main{
     display: grid;
     width: 85%;
-    margin:10px auto;
+    margin:0 auto;
     grid-template-columns: repeat(3,1fr);
     background-color: rgb(244, 233, 233);
     box-shadow: 0 0 5px gray;
@@ -30,10 +30,17 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box3 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box3 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.box3 img:hover{
+    transform: scale(1.03);
 }
 .box4{
     text-align: center;
@@ -42,10 +49,18 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box4 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box4 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+    transition: 0.3s;
+}
+.box4 img:hover{
+    transform: scale(1.03);
 }
 .box5{
     text-align: center;
@@ -54,10 +69,17 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box5 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box5 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.box5 img:hover{
+    transform: scale(1.03);
 }
 .box6{
     text-align: center;
@@ -67,10 +89,17 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box6 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box6 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.box6 img:hover{
+    transform: scale(1.03);
 }
 .box7{
     text-align: center;
@@ -80,10 +109,17 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box7 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box7 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.box7 img:hover{
+    transform: scale(1.03);
 }
 .box8{
     text-align: center;
@@ -93,10 +129,17 @@ main{
     width: 320px;
     margin: 0 auto;
 }
+.box8 img{
+    transition: 0.3s;
+    border-radius: 12px;
+}
 .box8 a{
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.box8 img:hover{
+    transform: scale(1.03);
 }
 .box9{
     background-color: lightseagreen;
@@ -121,7 +164,7 @@ main{
     font-size: 18px;
 }
 .navlinks:hover{
-    background-color: black;
+    background-color: lightseagreen;
     color: white;
 }
 .logo{
@@ -131,17 +174,43 @@ main{
     -webkit-text-fill-color: transparent;
     margin-left: 20px;
 }
-.box2{
-
+.searchbar{
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    outline: 0;
+    margin-right: 50px;
+    transition: 0.3s;
+    -webkit-text-fill-color: black;
+}
+.search-icon{
+    position: relative;
+    right: 86.5px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    transition: 0.3s;
+}
+.search-icon:hover{
+    background-color: lightseagreen;
+    color: black;
 }
 .bnr2{
     display: none;
 }
-
-@media (max-width:768px){
-    .container{
+body{
+    background-image: url(img/360_F_215948377_kgIhNUy4X0iYsyUfYd9KKIViSPOxclbC.jpg);
+}
+@media (max-width:798px){
+    main{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navbar{
+        background-color: white;
     }
     .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
         grid-column-start: span 3;
@@ -150,7 +219,10 @@ main{
         top: 20px;
         margin-top: 30px;
     }
-    .box6,.box7,.box8{
+    .box6,.box7{
+        margin-top: 15px;
+    }
+    .box8{
         margin-top: 50px;
     }
     .navlinks{
@@ -166,7 +238,13 @@ main{
         display: none;
     }
     .bnr2{
-        display: initial;
+        display:inherit
+    }
+    .searchbar{
+        display: none;
+    }
+    .search-icon{
+        display: none;
     }
 }
 @media (max-width:1150px){
@@ -179,5 +257,17 @@ main{
     .box3,.box4,.box5,.box6,.box7,.box8{
         width: 210px;
         top: 50px;
+    }
+    .searchbar{
+        width: 250px;
+        margin-right: 0;
+    }
+    .search-icon{
+        right: 36.5px;
+    }
+}
+@media (max-width:880px){
+    .searchbar{
+        width: 190px;
     }
 }
